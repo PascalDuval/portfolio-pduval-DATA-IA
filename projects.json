@@ -19,6 +19,33 @@
       "Implémentation du pipeline",
       "Documentation et tests"
     ],
+    "competencies": [
+      {
+        "competence": "Cadrage analytique et traduction du besoin metier",
+        "mise_en_oeuvre": "transformation de la question business (pays cibles) en criteres mesurables exploitables dans les donnees EdStats",
+        "valeur_ajoutee": "facilite une decision d'expansion argumentee et priorisee"
+      },
+      {
+        "competence": "Preparation et fiabilisation des donnees",
+        "mise_en_oeuvre": "controle de qualite, nettoyage, filtrage des faux pays/agregats et gestion de la completude",
+        "valeur_ajoutee": "reduction du risque de conclusions erronees dues a des donnees bruites"
+      },
+      {
+        "competence": "Conception d'une methode de scoring reproductible",
+        "mise_en_oeuvre": "selection d'indicateurs utiles, reduction des redondances, score composite normalise (Z-score)",
+        "valeur_ajoutee": "methode transparente, reutilisable et defendable en comite projet"
+      },
+      {
+        "competence": "Industrialisation minimale d'un POC data",
+        "mise_en_oeuvre": "logique extraite dans src/academy/data_utils.py et tests unitaires pytest",
+        "valeur_ajoutee": "passage d'une analyse ad hoc a une base maintenable pour un MVP"
+      },
+      {
+        "competence": "Communication technique et livrables professionnels",
+        "mise_en_oeuvre": "notebook de demonstration, README, support/rapport documentaire",
+        "valeur_ajoutee": "meilleure transmission aux equipes produit et techniques"
+      }
+    ],
     "featured": false,
     "image": "images/academy.png",
     "resources": []
@@ -43,6 +70,33 @@
       "Conception technique",
       "Implémentation du pipeline",
       "Documentation et tests"
+    ],
+    "competencies": [
+      {
+        "competence": "Modelisation de donnees relationnelle",
+        "mise_en_oeuvre": "conception d'un schema normalise (1NF/2NF/3NF) avec separation claire dimensions geographiques, faits immobiliers et demographie",
+        "valeur_ajoutee": "reduction des redondances, meilleure integrite et requetes analytiques plus fiables"
+      },
+      {
+        "competence": "Construction d'un pipeline de transformation robuste",
+        "mise_en_oeuvre": "nettoyage des fichiers sources, normalisation des types/codes, creation deterministe des identifiants metier, chargement ordonne en SQLite",
+        "valeur_ajoutee": "reproductibilite technique et diminution des erreurs de chargement"
+      },
+      {
+        "competence": "Validation qualite et non-regression",
+        "mise_en_oeuvre": "tests unitaires pytest sur les etapes critiques du pipeline et verification de la base generee",
+        "valeur_ajoutee": "fiabilisation des livrables et maintien de la qualite dans la duree"
+      },
+      {
+        "competence": "Traduction du besoin metier en analyses SQL",
+        "mise_en_oeuvre": "structuration de la base pour repondre aux questions prix/volumes/evolutions territoriales demandees par le client",
+        "valeur_ajoutee": "decisionnel plus rapide et mieux argumente pour les equipes immobiliere"
+      },
+      {
+        "competence": "Documentation et communication projet",
+        "mise_en_oeuvre": "README detaille, contexte projet, support de presentation et traces des choix de conception",
+        "valeur_ajoutee": "transfert de connaissance facilite entre parties prenantes techniques et metier"
+      }
     ],
     "featured": false,
     "image": "images/immoprojets.png",
@@ -94,6 +148,33 @@
       "Implémentation du pipeline",
       "Documentation et tests"
     ],
+    "competencies": [
+      {
+        "competence": "Audit de donnees et diagnostic de cause racine",
+        "mise_en_oeuvre": "comparaison du CA selon dates de log, croisement entre faits OLAP et logs techniques, validation par SQL",
+        "valeur_ajoutee": "identification objective de l'origine des ecarts decisionnels"
+      },
+      {
+        "competence": "Verification de coherence et controle qualite",
+        "mise_en_oeuvre": "separation des faits valides/invalides, verification des correspondances faits-dimensions et controles d'identifiants",
+        "valeur_ajoutee": "meilleure fiabilite des indicateurs metier utilises en reporting"
+      },
+      {
+        "competence": "Durcissement transactionnel et integrite",
+        "mise_en_oeuvre": "triggers SQLite (blocage insertions retroactives, blocage suppressions incoherentes), activation FK, table Batch_Control",
+        "valeur_ajoutee": "reduction du risque de derive des KPI historiques"
+      },
+      {
+        "competence": "Architecture data et exploitation analytique",
+        "mise_en_oeuvre": "articulation OLTP -> batch -> OLAP -> dataviz, schema en etoile cible et scripts SQL d'audit",
+        "valeur_ajoutee": "cadre technique lisible pour industrialiser la supervision data"
+      },
+      {
+        "competence": "Restitution professionnelle et plan d'actions",
+        "mise_en_oeuvre": "rapport d'audit structure, recommandations priorisees, trajectoire de mise en oeuvre",
+        "valeur_ajoutee": "passage d'un constat technique a une feuille de route operationnelle"
+      }
+    ],
     "featured": false,
     "image": "images/docx-image-03.png",
     "resources": [
@@ -143,6 +224,33 @@
       "Conception technique",
       "Implémentation du pipeline",
       "Documentation et tests"
+    ],
+    "competencies": [
+      {
+        "competence": "Migration de donnees vers NoSQL",
+        "mise_en_oeuvre": "import CSV vers MongoDB avec scripts parametrables (URI/DB/collection) et mode dry-run",
+        "valeur_ajoutee": "reduction du risque de migration en production grace a une chaine testable"
+      },
+      {
+        "competence": "Qualite et fiabilisation des donnees",
+        "mise_en_oeuvre": "detection/suppression des doublons, controles d'integrite, conversion rigoureuse des types",
+        "valeur_ajoutee": "meilleure confiance dans les analyses post-migration"
+      },
+      {
+        "competence": "Industrialisation et automatisation",
+        "mise_en_oeuvre": "scripts reutilisables, tests pytest/mongomock, execution Docker Compose",
+        "valeur_ajoutee": "deploiement plus simple et reproductible entre environnements"
+      },
+      {
+        "competence": "Gouvernance des acces et securite minimale",
+        "mise_en_oeuvre": "creation de comptes dbOwner/read-only, verification des permissions en ecriture/lecture",
+        "valeur_ajoutee": "limitation des risques d'usage non conforme des donnees medicales"
+      },
+      {
+        "competence": "Analyse metier sur donnees migrees",
+        "mise_en_oeuvre": "routines d'aggregation MongoDB (hopitaux, pathologies, medicaments, groupes sanguins)",
+        "valeur_ajoutee": "exploitation immediate des donnees a des fins decisionnelles"
+      }
     ],
     "featured": false,
     "image": "images/migration-mongodb.jpg",
@@ -194,6 +302,33 @@
       "Exposition du modèle via BentoML",
       "Conteneurisation pour le déploiement"
     ],
+    "competencies": [
+      {
+        "competence": "Conception d'un pipeline de donnees pour la modelisation",
+        "mise_en_oeuvre": "enchainement structure d'exploration, nettoyage, feature engineering et preparation des jeux de donnees",
+        "valeur_ajoutee": "meilleure reproductibilite entre analyse exploratoire et production du modele"
+      },
+      {
+        "competence": "Modelisation predictive et evaluation ML",
+        "mise_en_oeuvre": "comparaison de modeles supervises et optimisation d'un modele cible pour predire consommation et emissions",
+        "valeur_ajoutee": "aide a la decision pour estimer la performance energetique sans mesure directe"
+      },
+      {
+        "competence": "Prevention des biais de modelisation",
+        "mise_en_oeuvre": "choix explicite des variables structurelles et exclusion de variables risquant la fuite d'information",
+        "valeur_ajoutee": "predictions plus robustes et defendables metierement"
+      },
+      {
+        "competence": "Mise en production d'un modele via API",
+        "mise_en_oeuvre": "service BentoML, validation d'entree avec pydantic/pandera, packaging Bento et conteneurisation Docker",
+        "valeur_ajoutee": "passage concret de l'experimentation notebook a un usage applicatif"
+      },
+      {
+        "competence": "Communication et demonstration produit",
+        "mise_en_oeuvre": "notebooks ordonnes, README pedagogique, support de mission oriente demo pour parties prenantes",
+        "valeur_ajoutee": "facilitation de la restitution au comite de pilotage"
+      }
+    ],
     "featured": true,
     "image": "images/seattle.png",
     "resources": [
@@ -243,6 +378,33 @@
       "Conception technique",
       "Implémentation du pipeline",
       "Documentation et tests"
+    ],
+    "competencies": [
+      {
+        "competence": "Conception et exploitation d'une base NoSQL",
+        "mise_en_oeuvre": "restauration sous MongoDB, inspection des documents BSON/JSON et organisation des collections",
+        "valeur_ajoutee": "adaptation a des donnees semi-structurees sans rigidite de schema relationnel"
+      },
+      {
+        "competence": "Analyse de schema flexible et qualite des donnees",
+        "mise_en_oeuvre": "diagnostic des types, heterogeneite des champs, schema JSON et pipeline de verification",
+        "valeur_ajoutee": "meilleure comprehension des limites et forces des donnees scrapees"
+      },
+      {
+        "competence": "Requetes analytiques sur donnees documentaires",
+        "mise_en_oeuvre": "analyses sur disponibilite, logements entiers, multi-loueurs, super-hotes et repartition geographique",
+        "valeur_ajoutee": "production d'indicateurs utiles pour l'etude de l'impact logement/JO 2024"
+      },
+      {
+        "competence": "Administration MongoDB et scalabilite",
+        "mise_en_oeuvre": "scripts PowerShell de replica set, cluster sharde, deplacement de chunks et tests sequentiels",
+        "valeur_ajoutee": "demonstration de notions d'architecture distribuee et de resilience"
+      },
+      {
+        "competence": "Documentation d'exploitation",
+        "mise_en_oeuvre": "guides Windows, Jupyter, scripts PS1 et sequence de tests documentee",
+        "valeur_ajoutee": "facilitation de la reprise du projet et de son execution par un tiers"
+      }
     ],
     "featured": false,
     "image": "images/nosql.png",
@@ -294,6 +456,33 @@
       "Automatisation des tests CRUD et réplication",
       "Préparation du déploiement cloud"
     ],
+    "competencies": [
+      {
+        "competence": "Industrialisation d'un pipeline de migration",
+        "mise_en_oeuvre": "orchestration Docker Compose, conteneur de migration automatisant restauration, visualisation et tests",
+        "valeur_ajoutee": "execution standardisee et reproductible sans operations manuelles complexes"
+      },
+      {
+        "competence": "Administration MongoDB replica set",
+        "mise_en_oeuvre": "initialisation RS, creation des utilisateurs, verification lecture secondaire et etat de replication",
+        "valeur_ajoutee": "meilleure disponibilite et resilience de la couche donnees"
+      },
+      {
+        "competence": "Qualite de donnees et validation fonctionnelle",
+        "mise_en_oeuvre": "tests d'integrite et scenarios CRUD automatises apres restauration",
+        "valeur_ajoutee": "reduction du risque de corruption/incoherence post-migration"
+      },
+      {
+        "competence": "Architecture cible et preparation cloud",
+        "mise_en_oeuvre": "documentation logigramme/SI, procedure de deploiement EC2-ECR, supervision CloudWatch",
+        "valeur_ajoutee": "trajectoire claire vers une mise en production observable"
+      },
+      {
+        "competence": "Exploitation analytique meteo",
+        "mise_en_oeuvre": "structuration Time Series et generation de visualisation de temperature",
+        "valeur_ajoutee": "meilleure lisibilite des donnees pour usages metier et monitoring"
+      }
+    ],
     "featured": true,
     "image": "images/forecast2-0.png",
     "resources": [
@@ -344,6 +533,33 @@
       "Exports analytiques multi-formats",
       "Exécution conteneurisée de bout en bout"
     ],
+    "competencies": [
+      {
+        "competence": "Conception de pipeline streaming + batch",
+        "mise_en_oeuvre": "ingestion temps reel via topic Kafka et traitement batch snapshot sous PySpark",
+        "valeur_ajoutee": "combinaison robuste entre capture continue et production d'indicateurs consolides"
+      },
+      {
+        "competence": "Enrichissement et modelisation metier des evenements",
+        "mise_en_oeuvre": "schema explicite des tickets, standardisation des champs et derivation equipe_support",
+        "valeur_ajoutee": "donnees plus interpretable pour routage support et pilotage operations"
+      },
+      {
+        "competence": "Production d'outputs analytiques multi-formats",
+        "mise_en_oeuvre": "exports Parquet, JSON et CSV pour usages data science, BI et reporting",
+        "valeur_ajoutee": "interoperation facilitee avec differents outils aval"
+      },
+      {
+        "competence": "Conteneurisation et integration technique",
+        "mise_en_oeuvre": "orchestration Docker Compose de Redpanda, producer et job PySpark",
+        "valeur_ajoutee": "deploiement local reproductible et reduction des ecarts d'environnement"
+      },
+      {
+        "competence": "Qualite technique et testabilite",
+        "mise_en_oeuvre": "tests de connectivite broker, smoke tests PySpark et validation end-to-end conteneurisee",
+        "valeur_ajoutee": "detection rapide des regressions et securisation des livraisons"
+      }
+    ],
     "featured": true,
     "image": "images/indutech.png",
     "resources": [
@@ -393,6 +609,33 @@
       "Conception technique",
       "Implémentation du pipeline",
       "Documentation et tests"
+    ],
+    "competencies": [
+      {
+        "competence": "Conception de pipeline data modulaire",
+        "mise_en_oeuvre": "decomposition du traitement en phases explicites avec branches paralleles ERP/WEB/LIAISON",
+        "valeur_ajoutee": "meilleure lisibilite du flux et evolution plus simple du pipeline"
+      },
+      {
+        "competence": "Fiabilisation des donnees et controles qualite",
+        "mise_en_oeuvre": "verification systematique des doublons, valeurs critiques, jointures et integrite des sorties",
+        "valeur_ajoutee": "reduction du risque d'analyse metier basee sur des donnees incoherentes"
+      },
+      {
+        "competence": "Industrialisation et orchestration",
+        "mise_en_oeuvre": "flow Kestra planifie, execution rejouable, suivi des etapes via vues Topology et Gantt",
+        "valeur_ajoutee": "passage d'un traitement manuel a un processus gouvernable et pilotable"
+      },
+      {
+        "competence": "Preparation analytique metier",
+        "mise_en_oeuvre": "consolidation des sources, calcul du CA par produit et segmentation premium/ordinaires",
+        "valeur_ajoutee": "acceleration de la production de rapports pour les responsables produits"
+      },
+      {
+        "competence": "Documentation et demonstration projet",
+        "mise_en_oeuvre": "README operationnel, support PDF et diagramme d'architecture/flux detaille",
+        "valeur_ajoutee": "transfert de connaissance facilite pour reprise, audit et communication"
+      }
     ],
     "featured": false,
     "image": "images/bottleneck.png",
@@ -445,6 +688,33 @@
       "Recherche hybride avec métadonnées",
       "Interface Streamlit pour la recommandation"
     ],
+    "competencies": [
+      {
+        "competence": "Conception d'une architecture RAG",
+        "mise_en_oeuvre": "enchainement collecte, normalisation JSONL, embeddings Mistral, indexation FAISS et generation de reponse",
+        "valeur_ajoutee": "transformation de donnees ouvertes en recommandations actionnables pour l'utilisateur final"
+      },
+      {
+        "competence": "Recherche hybride semantique + metadonnees",
+        "mise_en_oeuvre": "combinaison retrieval vectoriel et filtres sur ville, tags et fenetre temporelle",
+        "valeur_ajoutee": "meilleures reponses contextualisees qu'une recherche uniquement lexicale"
+      },
+      {
+        "competence": "Fiabilisation d'un chatbot metier",
+        "mise_en_oeuvre": "guardrails pour detecter hors sujet, requetes trop larges et demandes de statistiques globales",
+        "valeur_ajoutee": "reduction des reponses non pertinentes et meilleure robustesse d'usage"
+      },
+      {
+        "competence": "Industrialisation de la qualite logicielle",
+        "mise_en_oeuvre": "tests unitaires et integration sur le pipeline RAG, la qualite du corpus et le comportement FAISS",
+        "valeur_ajoutee": "limitation des regressions lors des evolutions du bot"
+      },
+      {
+        "competence": "Restitution produit orientee usage",
+        "mise_en_oeuvre": "interface Streamlit avec traces de sources et indicateurs de fiabilite lisibles",
+        "valeur_ajoutee": "adoption facilitee par des utilisateurs non techniques"
+      }
+    ],
     "featured": true,
     "image": "images/culture.png",
     "resources": [
@@ -496,6 +766,33 @@
       "Contrôles qualité déclaratifs SODA",
       "Orchestration complète avec Kestra",
       "Exports analytiques vers Tableau"
+    ],
+    "competencies": [
+      {
+        "competence": "Conception d'un pipeline data medaillon",
+        "mise_en_oeuvre": "structuration Bronze/Silver/Gold avec separation claire ingestion, transformation et calcul metier",
+        "valeur_ajoutee": "meilleure lisibilite du flux et maintenance simplifiee"
+      },
+      {
+        "competence": "Fiabilisation de donnees RH et metier",
+        "mise_en_oeuvre": "normalisation des donnees, controles declaratifs SODA et suivi des resultats qualite",
+        "valeur_ajoutee": "reduction des risques de decision sur donnees incoherentes"
+      },
+      {
+        "competence": "Parametrage metier orienté pilotage",
+        "mise_en_oeuvre": "calcul des avantages pilote par table config (taux, seuils, regles d'eligibilite)",
+        "valeur_ajoutee": "adaptation rapide aux evolutions de politique RH sans refonte code"
+      },
+      {
+        "competence": "Orchestration et automatisation operationnelle",
+        "mise_en_oeuvre": "flows Kestra, execution API Flask et notifications Slack des evenements",
+        "valeur_ajoutee": "supervision claire et reduction des operations manuelles"
+      },
+      {
+        "competence": "Restitution decisionnelle",
+        "mise_en_oeuvre": "exports structures pour Tableau et preparation d'un reporting orienté cout et eligibilite",
+        "valeur_ajoutee": "aide a l'arbitrage RH/financier sur le dispositif d'avantages"
+      }
     ],
     "featured": true,
     "image": "images/avantagesportif.png",

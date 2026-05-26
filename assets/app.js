@@ -18,8 +18,8 @@ function cardTemplate(project) {
         <p>${project.summary}</p>
         <div class="tags">${tags}</div>
         <div class="actions">
-          <a class="btn btn-primary" href="${project.github}" target="_blank" rel="noreferrer">Voir le GitHub</a>
-          <a class="btn btn-secondary" href="./projects/${project.slug}.html">Voir la fiche projet</a>
+          <a class="btn btn-primary" href="${project.github}" target="_blank" rel="noreferrer">Github</a>
+          <a class="btn btn-secondary" href="./projects/${project.slug}.html">Voir la fiche projet et les compétences mise en oeuvre</a>
         </div>
       </div>
     </article>
