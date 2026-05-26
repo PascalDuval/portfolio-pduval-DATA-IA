@@ -1,0 +1,529 @@
+[
+  {
+    "id": 2,
+    "slug": "academy",
+    "title": "Academy",
+    "category": "Data Engineering",
+    "summary": "Identifier les pays a plus fort potentiel pour l'expansion internationale d'une offre dasn le domaine de l'éducation",
+    "objective": "Identifier les pays a plus fort potentiel pour l'expansion internationale d'une offre dasn le domaine de l'éducation",
+    "deliverables": "Notebook d'analyse, module Python reutilisable, tests unitaires, ranking de pays via score composite",
+    "technologies": [
+      "Python",
+      "pandas",
+      "pytest"
+    ],
+    "github": "https://github.com/PascalDuval/Academy",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/academy.png",
+    "resources": []
+  },
+  {
+    "id": 3,
+    "slug": "immoprojets",
+    "title": "ImmoProjets",
+    "category": "Bases de données",
+    "summary": "Construire une base relationnelle immobiliere normalisee pour analyser les transactions foncieres et produire des indicateurs SQL actionnables",
+    "objective": "Construire une base relationnelle immobiliere normalisee pour analyser les transactions foncieres et produire des indicateurs SQL actionnables",
+    "deliverables": "Pipeline de transformation, schema SQL normalise, base SQLite reproductible, tests unitaires, support de presentation",
+    "technologies": [
+      "Python",
+      "SQLite",
+      "SQL",
+      "pytest"
+    ],
+    "github": "https://github.com/PascalDuval/ImmoProjets",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/docx-image-02.png",
+    "resources": [
+      {
+        "label": "Projet 3 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/ImmoProjets"
+      },
+      {
+        "label": "Jeux de donnees (CSV/XLSX)",
+        "url": "https://github.com/PascalDuval/ImmoProjets/tree/main/data"
+      },
+      {
+        "label": "Pipeline de transformation",
+        "url": "https://github.com/PascalDuval/ImmoProjets/blob/main/src/immo_projets/pipeline.py"
+      },
+      {
+        "label": "Script de build de la base",
+        "url": "https://github.com/PascalDuval/ImmoProjets/blob/main/scripts/build_database.py"
+      },
+      {
+        "label": "Schema relationnel SQL",
+        "url": "https://github.com/PascalDuval/ImmoProjets/blob/main/modele_donnees_sql/sql/schema.sql"
+      },
+      {
+        "label": "Tests unitaires",
+        "url": "https://github.com/PascalDuval/ImmoProjets/blob/main/tests/test_pipeline.py"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "supersmartmarket",
+    "title": "SuperSmartMarket",
+    "category": "Data Engineering",
+    "summary": "Auditer l'instabilite du chiffre d'affaires entre OLTP et cube OLAP, identifier la cause des ecarts et proposer des correctifs de robustesse",
+    "objective": "Auditer l'instabilite du chiffre d'affaires entre OLTP et cube OLAP, identifier la cause des ecarts et proposer des correctifs de robustesse",
+    "deliverables": "Notebooks d'audit, scripts SQL de controle et hardening, base OLAP/SQLite de POC, rapport d'audit, plan d'action",
+    "technologies": [
+      "SQL",
+      "SQLite",
+      "Python",
+      "Jupyter"
+    ],
+    "github": "https://github.com/PascalDuval/SuperMarket",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/docx-image-03.png",
+    "resources": [
+      {
+        "label": "Projet 4 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/SuperMarket"
+      },
+      {
+        "label": "Donnees (CSV/XLSX)",
+        "url": "https://github.com/PascalDuval/SuperMarket/tree/main/data"
+      },
+      {
+        "label": "Notebooks d'audit",
+        "url": "https://github.com/PascalDuval/SuperMarket/blob/main/03_audit_technique_complet.ipynb"
+      },
+      {
+        "label": "SQL audit metier",
+        "url": "https://github.com/PascalDuval/SuperMarket/blob/main/database/sql/01_audit_requetes.sql"
+      },
+      {
+        "label": "SQL hardening (triggers)",
+        "url": "https://github.com/PascalDuval/SuperMarket/blob/main/database/sql/02_hardening_triggers.sql"
+      },
+      {
+        "label": "Base OLAP (dump SQL)",
+        "url": "https://github.com/PascalDuval/SuperMarket/blob/main/database/sql/SuperMarketOlap.db.sql"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "migration-mongodb",
+    "title": "migration-mongodb",
+    "category": "Bases de données",
+    "summary": "Migrer un jeu de donnees medicales CSV vers MongoDB avec nettoyage, controles d'integrite, tests et routines d'analyse",
+    "objective": "Migrer un jeu de donnees medicales CSV vers MongoDB avec nettoyage, controles d'integrite, tests et routines d'analyse",
+    "deliverables": "Scripts de migration/qualite, collection MongoDB alimentee, routines d'agregation, tests pytest/mongomock, variante Docker",
+    "technologies": [
+      "MongoDB",
+      "Python",
+      "Docker",
+      "pytest"
+    ],
+    "github": "https://github.com/PascalDuval/migration-mongodb",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/docx-image-04.png",
+    "resources": [
+      {
+        "label": "Projet 5 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/migration-mongodb"
+      },
+      {
+        "label": "Donnees source et purgees (CSV/JSON)",
+        "url": "https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/data"
+      },
+      {
+        "label": "Script principal de migration",
+        "url": "https://github.com/PascalDuval/migration-mongodb/blob/perfectoscripts/scripts/migration_crud.py"
+      },
+      {
+        "label": "Scripts de qualite des donnees",
+        "url": "https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/scripts"
+      },
+      {
+        "label": "Routines d'analyse MongoDB",
+        "url": "https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/routines"
+      },
+      {
+        "label": "Tests unitaires",
+        "url": "https://github.com/PascalDuval/migration-mongodb/blob/perfectoscripts/tests/test_migration_crud.py"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "seattle",
+    "title": "Seattle",
+    "category": "MLOps / API / Déploiement",
+    "summary": "Predire la consommation energetique et les emissions de batiments a Seattle a partir de donnees structurelles, puis exposer le modele via une API",
+    "objective": "Predire la consommation energetique et les emissions de batiments a Seattle a partir de donnees structurelles, puis exposer le modele via une API",
+    "deliverables": "Pipeline notebooks ML, feature engineering, modele entraine, service BentoML, Dockerfile de deploiement",
+    "technologies": [
+      "Python",
+      "scikit-learn",
+      "BentoML",
+      "Docker"
+    ],
+    "github": "https://github.com/PascalDuval/ForecastingEC4Seattle",
+    "highlights": [
+      "Feature engineering pour la prédiction énergie/CO2",
+      "Entraînement et comparaison de modèles ML",
+      "Exposition du modèle via BentoML",
+      "Conteneurisation pour le déploiement"
+    ],
+    "featured": true,
+    "image": "images/seattle.png",
+    "resources": [
+      {
+        "label": "Projet 6 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle"
+      },
+      {
+        "label": "Donnees brutes et preparees",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle/tree/main/data"
+      },
+      {
+        "label": "Notebooks du pipeline",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle/tree/main/notebooks"
+      },
+      {
+        "label": "Module de preparation de donnees",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle/blob/main/src/seattle_energy/data_processing.py"
+      },
+      {
+        "label": "Module d'entrainement",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle/blob/main/src/seattle_energy/model_training.py"
+      },
+      {
+        "label": "Service API BentoML",
+        "url": "https://github.com/PascalDuval/ForecastingEC4Seattle/blob/main/src/seattle_energy/service.py"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "nosql",
+    "title": "NoSQL",
+    "category": "Bases de données",
+    "summary": "Concevoir et analyser une base MongoDB pour etudier l'offre Airbnb a Paris dans la perspective de l'effet Jeux Olympiques 2024 sur le logement",
+    "objective": "Concevoir et analyser une base MongoDB pour etudier l'offre Airbnb a Paris dans la perspective de l'effet Jeux Olympiques 2024 sur le logement",
+    "deliverables": "Base MongoDB restauree, scripts replica set/sharding, requetes analytiques, notebooks d'analyse, documentation d'exploitation",
+    "technologies": [
+      "MongoDB",
+      "mongosh",
+      "Python",
+      "PowerShell"
+    ],
+    "github": "https://github.com/PascalDuval/AirbnbNoSQL",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/docx-image-06.png",
+    "resources": [
+      {
+        "label": "Projet 7 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL"
+      },
+      {
+        "label": "Donnees sources et exports",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL/tree/main/data"
+      },
+      {
+        "label": "Notebooks d'analyse",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL/tree/main/notebooks"
+      },
+      {
+        "label": "Scripts PowerShell d'infrastructure",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL/tree/main/scripts/powershell"
+      },
+      {
+        "label": "Scripts Mongo (mongosh)",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL/tree/main/scripts/mongo"
+      },
+      {
+        "label": "Schema et pipeline diagnostic",
+        "url": "https://github.com/PascalDuval/AirbnbNoSQL/tree/main/data/schemas"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "forecast2-0",
+    "title": "Forecast2.0",
+    "category": "Bases de données",
+    "summary": "Migrer et industrialiser des donnees meteo vers MongoDB Time Series avec automatisation des tests, replica set Docker et preparation au deploiement cloud",
+    "objective": "Migrer et industrialiser des donnees meteo vers MongoDB Time Series avec automatisation des tests, replica set Docker et preparation au deploiement cloud",
+    "deliverables": "Pipeline de restauration/controle, cluster MongoDB replique, orchestration Docker Compose, tests CRUD et replication, documentation architecture/deploiement",
+    "technologies": [
+      "MongoDB Time Series",
+      "Docker",
+      "Replica Set",
+      "AWS"
+    ],
+    "github": "https://github.com/PascalDuval/GreenCoop",
+    "highlights": [
+      "Migration de données météo vers MongoDB Time Series",
+      "Mise en place d'un replica set 3 nœuds",
+      "Automatisation des tests CRUD et réplication",
+      "Préparation du déploiement cloud"
+    ],
+    "featured": true,
+    "image": "images/forecast2-0.png",
+    "resources": [
+      {
+        "label": "Projet 8 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/GreenCoop"
+      },
+      {
+        "label": "Donnees et backup",
+        "url": "https://github.com/PascalDuval/GreenCoop/tree/main/data"
+      },
+      {
+        "label": "Pipeline migration Python",
+        "url": "https://github.com/PascalDuval/GreenCoop/tree/main/migration"
+      },
+      {
+        "label": "Scripts replica set",
+        "url": "https://github.com/PascalDuval/GreenCoop/tree/main/scripts-replica"
+      },
+      {
+        "label": "Orchestration Docker Compose",
+        "url": "https://github.com/PascalDuval/GreenCoop/blob/main/docker-compose.yml"
+      },
+      {
+        "label": "Procedure de deploiement EC2",
+        "url": "https://github.com/PascalDuval/GreenCoop/blob/main/docs/deployment/PROCEDURE_EC2.md"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "indutech",
+    "title": "InduTech",
+    "category": "Data Engineering",
+    "summary": "Mettre en place un pipeline data industriel de tickets support en streaming Kafka/Redpanda et traitement batch PySpark, avec exports analytiques exploitables",
+    "objective": "Mettre en place un pipeline data industriel de tickets support en streaming Kafka/Redpanda et traitement batch PySpark, avec exports analytiques exploitables",
+    "deliverables": "Producteur Kafka, job PySpark d'enrichissement, sorties Parquet/JSON/CSV, orchestration Docker, tests de connexion/containers",
+    "technologies": [
+      "Kafka",
+      "Redpanda",
+      "PySpark",
+      "Docker"
+    ],
+    "github": "https://github.com/PascalDuval/InduTechData",
+    "highlights": [
+      "Ingestion streaming de tickets support via Kafka/Redpanda",
+      "Traitement batch PySpark et enrichissement métier",
+      "Exports analytiques multi-formats",
+      "Exécution conteneurisée de bout en bout"
+    ],
+    "featured": true,
+    "image": "images/indutech.png",
+    "resources": [
+      {
+        "label": "Projet 9 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/InduTechData"
+      },
+      {
+        "label": "Presentation projet",
+        "url": "https://github.com/PascalDuval/InduTechData/blob/main/data/InduTechData.pptx"
+      },
+      {
+        "label": "Document architecture hybride",
+        "url": "https://github.com/PascalDuval/InduTechData/blob/main/data/archihybride.doc"
+      },
+      {
+        "label": "Producteur Kafka principal",
+        "url": "https://github.com/PascalDuval/InduTechData/blob/main/producer_tickets.py"
+      },
+      {
+        "label": "Job PySpark batch principal",
+        "url": "https://github.com/PascalDuval/InduTechData/blob/main/poc_tickets_batch_json.py"
+      },
+      {
+        "label": "Orchestration conteneurs",
+        "url": "https://github.com/PascalDuval/InduTechData/blob/main/docker-compose.yml"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "bottleneck",
+    "title": "bottleneck",
+    "category": "Qualité & orchestration",
+    "summary": "Automatiser et industrialiser la reconciliation de donnees ERP, WEB et liaison pour fiabiliser les analyses commerciales et la segmentation produits",
+    "objective": "Automatiser et industrialiser la reconciliation de donnees ERP, WEB et liaison pour fiabiliser les analyses commerciales et la segmentation produits",
+    "deliverables": "Pipeline DuckDB/Pandas, workflow Kestra orchestre, controles qualite integres, exports analytiques Excel/CSV, supports de diagrammes et presentation",
+    "technologies": [
+      "DuckDB",
+      "Python",
+      "Kestra",
+      "Docker"
+    ],
+    "github": "https://github.com/PascalDuval/bottleneck",
+    "highlights": [
+      "Cadrage du besoin",
+      "Conception technique",
+      "Implémentation du pipeline",
+      "Documentation et tests"
+    ],
+    "featured": false,
+    "image": "images/bottleneck.png",
+    "resources": [
+      {
+        "label": "Projet 10 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/bottleneck"
+      },
+      {
+        "label": "README projet",
+        "url": "https://github.com/PascalDuval/bottleneck/blob/main/README.md"
+      },
+      {
+        "label": "Workflow Kestra principal",
+        "url": "https://github.com/PascalDuval/bottleneck/blob/main/Kestra/flows/orchestration_vins_duckdb.yaml"
+      },
+      {
+        "label": "Script principal DuckDB",
+        "url": "https://github.com/PascalDuval/bottleneck/blob/main/nettoyage_reconciliation_DuckDB.py"
+      },
+      {
+        "label": "Script principal Pandas",
+        "url": "https://github.com/PascalDuval/bottleneck/blob/main/nettoyage_reconciliation.py"
+      },
+      {
+        "label": "Orchestration locale",
+        "url": "https://github.com/PascalDuval/bottleneck/blob/main/docker-compose.yml"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "culture",
+    "title": "Culture",
+    "category": "RAG / IA générative",
+    "summary": "Concevoir un chatbot culturel base sur un pipeline RAG pour recommander des evenements en Ile-de-France a partir de donnees OpenAgenda",
+    "objective": "Concevoir un chatbot culturel base sur un pipeline RAG pour recommander des evenements en Ile-de-France a partir de donnees OpenAgenda",
+    "deliverables": "Pipeline RAG complet (collecte, vectorisation, indexation), moteur de recherche hybride FAISS + metadonnees, interface Streamlit, scripts de test et documentation technique",
+    "technologies": [
+      "Python",
+      "FAISS",
+      "LangChain",
+      "Streamlit",
+      "OpenAgenda"
+    ],
+    "github": "https://github.com/PascalDuval/Puls-Events",
+    "highlights": [
+      "Collecte et prétraitement des données OpenAgenda",
+      "Vectorisation et indexation FAISS",
+      "Recherche hybride avec métadonnées",
+      "Interface Streamlit pour la recommandation"
+    ],
+    "featured": true,
+    "image": "images/culture.png",
+    "resources": [
+      {
+        "label": "Projet 11 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/Puls-Events"
+      },
+      {
+        "label": "README projet",
+        "url": "https://github.com/PascalDuval/Puls-Events/blob/main/README.md"
+      },
+      {
+        "label": "Collecte et pre-processing OpenAgenda",
+        "url": "https://github.com/PascalDuval/Puls-Events/blob/main/openagenda_culture_france_rag.py"
+      },
+      {
+        "label": "Vectorisation des evenements",
+        "url": "https://github.com/PascalDuval/Puls-Events/blob/main/vectorize_events_mistral.py"
+      },
+      {
+        "label": "Construction index FAISS",
+        "url": "https://github.com/PascalDuval/Puls-Events/blob/main/index_events_faiss.py"
+      },
+      {
+        "label": "Moteur de recherche hybride",
+        "url": "https://github.com/PascalDuval/Puls-Events/blob/main/faiss_searcher.py"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "avantagesportif",
+    "title": "AvantageSportif",
+    "category": "Qualité & orchestration",
+    "summary": "Concevoir un POC data de pilotage des avantages sportifs collaborateurs, de l'ingestion RH/sport au calcul des droits et au suivi operationnel",
+    "objective": "Concevoir un POC data de pilotage des avantages sportifs collaborateurs, de l'ingestion RH/sport au calcul des droits et au suivi operationnel",
+    "deliverables": "Pipeline medaillon Bronze/Silver/Gold, ETL Python + Delta Lake, orchestration Kestra, controles qualite SODA, notifications Slack, exports analytiques pour Tableau",
+    "technologies": [
+      "Python",
+      "Delta Lake",
+      "Kestra",
+      "SODA",
+      "Flask",
+      "Tableau"
+    ],
+    "github": "https://github.com/PascalDuval/AvantageSport",
+    "highlights": [
+      "Architecture médaillon Bronze/Silver/Gold",
+      "Contrôles qualité déclaratifs SODA",
+      "Orchestration complète avec Kestra",
+      "Exports analytiques vers Tableau"
+    ],
+    "featured": true,
+    "image": "images/avantagesportif.png",
+    "resources": [
+      {
+        "label": "Projet 12 - Depot GitHub",
+        "url": "https://github.com/PascalDuval/AvantageSport"
+      },
+      {
+        "label": "README projet",
+        "url": "https://github.com/PascalDuval/AvantageSport/blob/main/README.md"
+      },
+      {
+        "label": "Note de cadrage (PDF)",
+        "url": "https://github.com/PascalDuval/AvantageSport/blob/main/documentation/Note+de+cadrage+_+POC+Avantages+Sportif.pdf"
+      },
+      {
+        "label": "Schema d'architecture de cadrage",
+        "url": "https://github.com/PascalDuval/AvantageSport/blob/main/documentation/Note+de+cadrage+_+POC+Avantages+Sportif_page2_image.png"
+      },
+      {
+        "label": "Mail de cadrage metier",
+        "url": "https://github.com/PascalDuval/AvantageSport/blob/main/documentation/mailjuliette.txt"
+      },
+      {
+        "label": "Ingestion source XLSX",
+        "url": "https://github.com/PascalDuval/AvantageSport/blob/main/src/ingest_xlsx.py"
+      }
+    ]
+  }
+]
