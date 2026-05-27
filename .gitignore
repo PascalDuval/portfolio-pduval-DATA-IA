@@ -1,0 +1,53 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+env/
+
+# Test and notebook caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Temporary local scripts/files
+_tmp*
+*.tmp
+*.bak
+
+# Documentation
+documentation/
+docs/
+**/documentation/
+**/docs/
+*.md
+*.txt
+*.rst
+*.adoc
+*.pdf
+*.doc
+*.docx
