@@ -19,6 +19,9 @@ const uiText = {
 };
 
 function cardTemplate(project) {
+  const projectDetailsHref = lang === 'en'
+    ? `./projects/${project.slug}-en.html`
+    : `./projects/${project.slug}.html`;
   const tags = project.technologies.slice(0, 5).map(t => `<span class="tag">${t}</span>`).join('');
   const image = project.image
     ? `<img src="${project.image}" alt="Illustration ${project.title}">`
@@ -34,7 +37,7 @@ function cardTemplate(project) {
         <div class="tags">${tags}</div>
         <div class="actions">
           <a class="btn btn-primary" href="${project.github}" target="_blank" rel="noreferrer">${uiText[lang].github}</a>
-          <a class="btn btn-secondary" href="./projects/${project.slug}.html">${uiText[lang].details}</a>
+          <a class="btn btn-secondary" href="${projectDetailsHref}">${uiText[lang].details}</a>
         </div>
       </div>
     </article>

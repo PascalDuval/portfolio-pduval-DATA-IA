@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Implement an industrial data pipeline for support tickets with Kafka/Redpanda streaming and PySpark batch processing, with usable analytical exports.">
+  <title>InduTech - Portfolio Data / IA</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="project-page">
+  <header class="hero container">
+    <a class="btn btn-secondary" href="../index-en.html">← Back to home</a>
+    <h1>InduTech</h1>
+    <p class="lead">Implement an industrial data pipeline for support tickets with Kafka/Redpanda streaming and PySpark batch processing, with usable analytical exports.</p>
+    <div class="tags"><span class="tag">Kafka</span><span class="tag">Redpanda</span><span class="tag">PySpark</span><span class="tag">Docker</span></div>
+  </header>
+
+  <main class="container">
+    <div class="panel project-visual"><img src="../images/indutech.png" alt="Illustration InduTech"></div>
+    <section class="panel"><h2>Implemented skills</h2><p>This section mirrors the competencies described in annexes.md for this project.</p><div class="competency-list"><article class="competency-item"><h3>Conception de pipeline streaming + batch</h3><p><span class="competency-label">Implementation:</span> ingestion temps reel via topic Kafka et traitement batch snapshot sous PySpark</p><p><span class="competency-label">Business value:</span> combinaison robuste entre capture continue et production d'indicateurs consolides</p></article><article class="competency-item"><h3>Enrichissement et modelisation metier des evenements</h3><p><span class="competency-label">Implementation:</span> schema explicite des tickets, standardisation des champs et derivation equipe_support</p><p><span class="competency-label">Business value:</span> donnees plus interpretable pour routage support et pilotage operations</p></article><article class="competency-item"><h3>Production d'outputs analytiques multi-formats</h3><p><span class="competency-label">Implementation:</span> exports Parquet, JSON et CSV pour usages data science, BI et reporting</p><p><span class="competency-label">Business value:</span> interoperation facilitee avec differents outils aval</p></article><article class="competency-item"><h3>Conteneurisation et integration technique</h3><p><span class="competency-label">Implementation:</span> orchestration Docker Compose de Redpanda, producer et job PySpark</p><p><span class="competency-label">Business value:</span> deploiement local reproductible et reduction des ecarts d'environnement</p></article><article class="competency-item"><h3>Qualite technique et testabilite</h3><p><span class="competency-label">Implementation:</span> tests de connectivite broker, smoke tests PySpark et validation end-to-end conteneurisee</p><p><span class="competency-label">Business value:</span> detection rapide des regressions et securisation des livraisons</p></article></div></section>
+    <section class="panel">
+      <h2>Context</h2>
+      <p>Implement an industrial data pipeline for support tickets with Kafka/Redpanda streaming and PySpark batch processing, with usable analytical exports.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Technical architecture</h2>
+      <p>Kafka producer, PySpark enrichment job, Parquet/JSON/CSV outputs, Docker orchestration, and connectivity/container testing.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Concrete achievements</h2>
+      <ul><li>Ingestion streaming de tickets support via Kafka/Redpanda</li><li>Traitement batch PySpark et enrichissement métier</li><li>Exports analytiques multi-formats</li><li>Exécution conteneurisée de bout en bout</li></ul>
+    </section>
+
+    <section class="panel">
+      <h2>GitHub link</h2>
+      <p><a href="https://github.com/PascalDuval/InduTechData" target="_blank" rel="noreferrer">https://github.com/PascalDuval/InduTechData</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Resources</h2>
+      <ul><li><a href="https://github.com/PascalDuval/InduTechData" target="_blank" rel="noreferrer">Project 9 - GitHub repository</a></li><li><a href="https://github.com/PascalDuval/InduTechData/blob/main/data/InduTechData.pptx" target="_blank" rel="noreferrer">Presentation projet</a></li><li><a href="https://github.com/PascalDuval/InduTechData/blob/main/data/archihybride.doc" target="_blank" rel="noreferrer">Hybrid architecture document</a></li><li><a href="https://github.com/PascalDuval/InduTechData/blob/main/producer_tickets.py" target="_blank" rel="noreferrer">Main Kafka producer</a></li><li><a href="https://github.com/PascalDuval/InduTechData/blob/main/poc_tickets_batch_json.py" target="_blank" rel="noreferrer">Main PySpark batch job</a></li><li><a href="https://github.com/PascalDuval/InduTechData/blob/main/docker-compose.yml" target="_blank" rel="noreferrer">Container orchestration</a></li></ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Project #9 - category: Data Engineering</p>
+  </footer>
+</body>
+</html>

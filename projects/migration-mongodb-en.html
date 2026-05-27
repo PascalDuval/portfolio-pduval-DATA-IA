@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Migrate a medical CSV dataset to MongoDB with cleaning, integrity checks, tests, and analysis routines.">
+  <title>migration-mongodb - Portfolio Data / IA</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="project-page">
+  <header class="hero container">
+    <a class="btn btn-secondary" href="../index-en.html">← Back to home</a>
+    <h1>migration-mongodb</h1>
+    <p class="lead">Migrate a medical CSV dataset to MongoDB with cleaning, integrity checks, tests, and analysis routines.</p>
+    <div class="tags"><span class="tag">MongoDB</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">pytest</span></div>
+  </header>
+
+  <main class="container">
+    <div class="panel project-visual"><img src="../images/migration-mongodb.jpg" alt="Illustration migration-mongodb"></div>
+    <section class="panel"><h2>Implemented skills</h2><p>This section mirrors the competencies described in annexes.md for this project.</p><div class="competency-list"><article class="competency-item"><h3>Migration de donnees vers NoSQL</h3><p><span class="competency-label">Implementation:</span> import CSV vers MongoDB avec scripts parametrables (URI/DB/collection) et mode dry-run</p><p><span class="competency-label">Business value:</span> reduction du risque de migration en production grace a une chaine testable</p></article><article class="competency-item"><h3>Qualite et fiabilisation des donnees</h3><p><span class="competency-label">Implementation:</span> detection/suppression des doublons, controles d'integrite, conversion rigoureuse des types</p><p><span class="competency-label">Business value:</span> meilleure confiance dans les analyses post-migration</p></article><article class="competency-item"><h3>Industrialisation et automatisation</h3><p><span class="competency-label">Implementation:</span> scripts reutilisables, tests pytest/mongomock, execution Docker Compose</p><p><span class="competency-label">Business value:</span> deploiement plus simple et reproductible entre environnements</p></article><article class="competency-item"><h3>Gouvernance des acces et securite minimale</h3><p><span class="competency-label">Implementation:</span> creation de comptes dbOwner/read-only, verification des permissions en ecriture/lecture</p><p><span class="competency-label">Business value:</span> limitation des risques d'usage non conforme des donnees medicales</p></article><article class="competency-item"><h3>Analyse metier sur donnees migrees</h3><p><span class="competency-label">Implementation:</span> routines d'aggregation MongoDB (hopitaux, pathologies, medicaments, groupes sanguins)</p><p><span class="competency-label">Business value:</span> exploitation immediate des donnees a des fins decisionnelles</p></article></div></section>
+    <section class="panel">
+      <h2>Context</h2>
+      <p>Migrate a medical CSV dataset to MongoDB with cleaning, integrity checks, tests, and analysis routines.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Technical architecture</h2>
+      <p>Migration/quality scripts, populated MongoDB collection, aggregation routines, pytest/mongomock tests, and Docker variant.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Concrete achievements</h2>
+      <ul><li>Requirements framing</li><li>Technical design</li><li>Pipeline implementation</li><li>Documentation and tests</li></ul>
+    </section>
+
+    <section class="panel">
+      <h2>GitHub link</h2>
+      <p><a href="https://github.com/PascalDuval/migration-mongodb" target="_blank" rel="noreferrer">https://github.com/PascalDuval/migration-mongodb</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Resources</h2>
+      <ul><li><a href="https://github.com/PascalDuval/migration-mongodb" target="_blank" rel="noreferrer">Project 5 - GitHub repository</a></li><li><a href="https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/data" target="_blank" rel="noreferrer">Source and cleaned data (CSV/JSON)</a></li><li><a href="https://github.com/PascalDuval/migration-mongodb/blob/perfectoscripts/scripts/migration_crud.py" target="_blank" rel="noreferrer">Script principal de migration</a></li><li><a href="https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/scripts" target="_blank" rel="noreferrer">Data quality scripts</a></li><li><a href="https://github.com/PascalDuval/migration-mongodb/tree/perfectoscripts/routines" target="_blank" rel="noreferrer">MongoDB analysis routines</a></li><li><a href="https://github.com/PascalDuval/migration-mongodb/blob/perfectoscripts/tests/test_migration_crud.py" target="_blank" rel="noreferrer">Tests unitaires</a></li></ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Project #5 - category: Databases</p>
+  </footer>
+</body>
+</html>

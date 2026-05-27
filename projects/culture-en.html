@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Design a cultural chatbot based on a RAG pipeline to recommend events in the Paris region from OpenAgenda data.">
+  <title>Culture - Portfolio Data / IA</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="project-page">
+  <header class="hero container">
+    <a class="btn btn-secondary" href="../index-en.html">← Back to home</a>
+    <h1>Culture</h1>
+    <p class="lead">Design a cultural chatbot based on a RAG pipeline to recommend events in the Paris region from OpenAgenda data.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">FAISS</span><span class="tag">LangChain</span><span class="tag">Streamlit</span><span class="tag">OpenAgenda</span></div>
+  </header>
+
+  <main class="container">
+    <div class="panel project-visual"><img src="../images/culture.png" alt="Illustration Culture"></div>
+    <section class="panel"><h2>Implemented skills</h2><p>This section mirrors the competencies described in annexes.md for this project.</p><div class="competency-list"><article class="competency-item"><h3>Conception d'une architecture RAG</h3><p><span class="competency-label">Implementation:</span> enchainement collecte, normalisation JSONL, embeddings Mistral, indexation FAISS et generation de reponse</p><p><span class="competency-label">Business value:</span> transformation de donnees ouvertes en recommandations actionnables pour l'utilisateur final</p></article><article class="competency-item"><h3>Recherche hybride semantique + metadonnees</h3><p><span class="competency-label">Implementation:</span> combinaison retrieval vectoriel et filtres sur ville, tags et fenetre temporelle</p><p><span class="competency-label">Business value:</span> meilleures reponses contextualisees qu'une recherche uniquement lexicale</p></article><article class="competency-item"><h3>Fiabilisation d'un chatbot metier</h3><p><span class="competency-label">Implementation:</span> guardrails pour detecter hors sujet, requetes trop larges et demandes de statistiques globales</p><p><span class="competency-label">Business value:</span> reduction des reponses non pertinentes et meilleure robustesse d'usage</p></article><article class="competency-item"><h3>Industrialisation de la qualite logicielle</h3><p><span class="competency-label">Implementation:</span> tests unitaires et integration sur le pipeline RAG, la qualite du corpus et le comportement FAISS</p><p><span class="competency-label">Business value:</span> limitation des regressions lors des evolutions du bot</p></article><article class="competency-item"><h3>Restitution produit orientee usage</h3><p><span class="competency-label">Implementation:</span> interface Streamlit avec traces de sources et indicateurs de fiabilite lisibles</p><p><span class="competency-label">Business value:</span> adoption facilitee par des utilisateurs non techniques</p></article></div></section>
+    <section class="panel">
+      <h2>Context</h2>
+      <p>Design a cultural chatbot based on a RAG pipeline to recommend events in the Paris region from OpenAgenda data.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Technical architecture</h2>
+      <p>End-to-end RAG pipeline (collection, vectorization, indexing), FAISS + metadata hybrid retrieval engine, Streamlit interface, tests, and technical documentation.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Concrete achievements</h2>
+      <ul><li>OpenAgenda data collection and preprocessing</li><li>FAISS vectorization and indexing</li><li>Hybrid retrieval with metadata</li><li>Streamlit recommendation interface</li></ul>
+    </section>
+
+    <section class="panel">
+      <h2>GitHub link</h2>
+      <p><a href="https://github.com/PascalDuval/Puls-Events" target="_blank" rel="noreferrer">https://github.com/PascalDuval/Puls-Events</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Resources</h2>
+      <ul><li><a href="https://github.com/PascalDuval/Puls-Events" target="_blank" rel="noreferrer">Project 11 - GitHub repository</a></li><li><a href="https://github.com/PascalDuval/Puls-Events/blob/main/README.md" target="_blank" rel="noreferrer">Project README</a></li><li><a href="https://github.com/PascalDuval/Puls-Events/blob/main/openagenda_culture_france_rag.py" target="_blank" rel="noreferrer">OpenAgenda collection and preprocessing</a></li><li><a href="https://github.com/PascalDuval/Puls-Events/blob/main/vectorize_events_mistral.py" target="_blank" rel="noreferrer">Event vectorization</a></li><li><a href="https://github.com/PascalDuval/Puls-Events/blob/main/index_events_faiss.py" target="_blank" rel="noreferrer">FAISS index construction</a></li><li><a href="https://github.com/PascalDuval/Puls-Events/blob/main/faiss_searcher.py" target="_blank" rel="noreferrer">Hybrid search engine</a></li></ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Project #11 - category: RAG / Generative AI</p>
+  </footer>
+</body>
+</html>
