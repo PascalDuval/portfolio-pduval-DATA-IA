@@ -4,7 +4,7 @@
     "slug": "academy",
     "title": "Academy",
     "category": "Data Engineering",
-    "summary": "Identifier les pays a plus fort potentiel pour l'expansion internationale d'une offre dasn le domaine de l'éducation",
+    "summary": "Identifier les pays à plus fort potentiel pour l'expansion internationale d'une offre dans le domaine de l'éducation",
     "objective": "Identifier les pays a plus fort potentiel pour l'expansion internationale d'une offre dasn le domaine de l'éducation",
     "deliverables": "Notebook d'analyse, module Python reutilisable, tests unitaires, ranking de pays via score composite",
     "technologies": [
@@ -55,7 +55,7 @@
     "slug": "immoprojets",
     "title": "ImmoProjets",
     "category": "Bases de données",
-    "summary": "Construire une base relationnelle immobiliere normalisee pour analyser les transactions foncieres et produire des indicateurs SQL actionnables",
+    "summary": "Construire une base relationnelle immobilière normalisée pour analyser les transactions foncières et produire des indicateurs SQL actionnables",
     "objective": "Construire une base relationnelle immobiliere normalisee pour analyser les transactions foncieres et produire des indicateurs SQL actionnables",
     "deliverables": "Pipeline de transformation, schema SQL normalise, base SQLite reproductible, tests unitaires, support de presentation",
     "technologies": [
@@ -132,7 +132,7 @@
     "slug": "supersmartmarket",
     "title": "SuperSmartMarket",
     "category": "Data Engineering",
-    "summary": "Auditer l'instabilite du chiffre d'affaires entre OLTP et cube OLAP, identifier la cause des ecarts et proposer des correctifs de robustesse",
+    "summary": "Auditer l'instabilité du chiffre d'affaires entre OLTP et cube OLAP, identifier la cause des écarts et proposer des correctifs de robustesse",
     "objective": "Auditer l'instabilite du chiffre d'affaires entre OLTP et cube OLAP, identifier la cause des ecarts et proposer des correctifs de robustesse",
     "deliverables": "Notebooks d'audit, scripts SQL de controle et hardening, base OLAP/SQLite de POC, rapport d'audit, plan d'action",
     "technologies": [
@@ -207,9 +207,9 @@
   {
     "id": 5,
     "slug": "migration-mongodb",
-    "title": "migration-mongodb",
+    "title": "Migration MongoDB",
     "category": "Bases de données",
-    "summary": "Migrer un jeu de donnees medicales CSV vers MongoDB avec nettoyage, controles d'integrite, tests et routines d'analyse",
+    "summary": "Migrer un jeu de données médicales CSV vers MongoDB avec nettoyage, contrôles d'intégrité, tests et routines d'analyse",
     "objective": "Migrer un jeu de donnees medicales CSV vers MongoDB avec nettoyage, controles d'integrite, tests et routines d'analyse",
     "deliverables": "Scripts de migration/qualite, collection MongoDB alimentee, routines d'agregation, tests pytest/mongomock, variante Docker",
     "technologies": [
@@ -286,7 +286,7 @@
     "slug": "seattle",
     "title": "Seattle",
     "category": "MLOps / API / Déploiement",
-    "summary": "Predire la consommation energetique et les emissions de batiments a Seattle a partir de donnees structurelles, puis exposer le modele via une API",
+    "summary": "Prédire la consommation énergétique et les émissions de bâtiments à Seattle à partir de données structurelles, puis exposer le modèle via une API",
     "objective": "Predire la consommation energetique et les emissions de batiments a Seattle a partir de donnees structurelles, puis exposer le modele via une API",
     "deliverables": "Pipeline notebooks ML, feature engineering, modele entraine, service BentoML, Dockerfile de deploiement",
     "technologies": [
@@ -363,7 +363,7 @@
     "slug": "nosql",
     "title": "NoSQL",
     "category": "Bases de données",
-    "summary": "Concevoir et analyser une base MongoDB pour etudier l'offre Airbnb a Paris dans la perspective de l'effet Jeux Olympiques 2024 sur le logement",
+    "summary": "Concevoir et analyser une base MongoDB pour étudier l'offre Airbnb à Paris dans la perspective de l'effet Jeux Olympiques 2024 sur le logement",
     "objective": "Concevoir et analyser une base MongoDB pour etudier l'offre Airbnb a Paris dans la perspective de l'effet Jeux Olympiques 2024 sur le logement",
     "deliverables": "Base MongoDB restauree, scripts replica set/sharding, requetes analytiques, notebooks d'analyse, documentation d'exploitation",
     "technologies": [
@@ -440,7 +440,7 @@
     "slug": "forecast2-0",
     "title": "Forecast2.0",
     "category": "Bases de données",
-    "summary": "Migrer et industrialiser des donnees meteo vers MongoDB Time Series avec automatisation des tests, replica set Docker et preparation au deploiement cloud",
+    "summary": "Migrer et industrialiser des données météo vers MongoDB Time Series avec automatisation des tests, replica set Docker et préparation au déploiement cloud",
     "objective": "Migrer et industrialiser des donnees meteo vers MongoDB Time Series avec automatisation des tests, replica set Docker et preparation au deploiement cloud",
     "deliverables": "Pipeline de restauration/controle, cluster MongoDB replique, orchestration Docker Compose, tests CRUD et replication, documentation architecture/deploiement",
     "technologies": [
@@ -517,7 +517,7 @@
     "slug": "indutech",
     "title": "InduTech",
     "category": "Data Engineering",
-    "summary": "Mettre en place un pipeline data industriel de tickets support en streaming Kafka/Redpanda et traitement batch PySpark, avec exports analytiques exploitables",
+    "summary": "Mettre en place un pipeline data industriel de tickets support en streaming Kafka/Redpanda et traitement batch PySpark, avec des exports analytiques exploitables",
     "objective": "Mettre en place un pipeline data industriel de tickets support en streaming Kafka/Redpanda et traitement batch PySpark, avec exports analytiques exploitables",
     "deliverables": "Producteur Kafka, job PySpark d'enrichissement, sorties Parquet/JSON/CSV, orchestration Docker, tests de connexion/containers",
     "technologies": [
@@ -592,9 +592,9 @@
   {
     "id": 10,
     "slug": "bottleneck",
-    "title": "bottleneck",
+    "title": "Bottleneck",
     "category": "Qualité & orchestration",
-    "summary": "Automatiser et industrialiser la reconciliation de donnees ERP, WEB et liaison pour fiabiliser les analyses commerciales et la segmentation produits",
+    "summary": "Automatiser et industrialiser la réconciliation de données ERP, WEB et liaison pour fiabiliser les analyses commerciales et la segmentation produits",
     "objective": "Automatiser et industrialiser la reconciliation de donnees ERP, WEB et liaison pour fiabiliser les analyses commerciales et la segmentation produits",
     "deliverables": "Pipeline DuckDB/Pandas, workflow Kestra orchestre, controles qualite integres, exports analytiques Excel/CSV, supports de diagrammes et presentation",
     "technologies": [
@@ -671,7 +671,7 @@
     "slug": "culture",
     "title": "Culture",
     "category": "RAG / IA générative",
-    "summary": "Concevoir un chatbot culturel base sur un pipeline RAG pour recommander des evenements en Ile-de-France a partir de donnees OpenAgenda",
+    "summary": "Concevoir un chatbot culturel basé sur un pipeline RAG pour recommander des événements en Île-de-France à partir de données OpenAgenda",
     "objective": "Concevoir un chatbot culturel base sur un pipeline RAG pour recommander des evenements en Ile-de-France a partir de donnees OpenAgenda",
     "deliverables": "Pipeline RAG complet (collecte, vectorisation, indexation), moteur de recherche hybride FAISS + metadonnees, interface Streamlit, scripts de test et documentation technique",
     "technologies": [
@@ -749,7 +749,7 @@
     "slug": "avantagesportif",
     "title": "AvantageSportif",
     "category": "Qualité & orchestration",
-    "summary": "Concevoir un POC data de pilotage des avantages sportifs collaborateurs, de l'ingestion RH/sport au calcul des droits et au suivi operationnel",
+    "summary": "Concevoir un POC data de pilotage des avantages sportifs collaborateurs, de l'ingestion RH/sport au calcul des droits et au suivi opérationnel",
     "objective": "Concevoir un POC data de pilotage des avantages sportifs collaborateurs, de l'ingestion RH/sport au calcul des droits et au suivi operationnel",
     "deliverables": "Pipeline medaillon Bronze/Silver/Gold, ETL Python + Delta Lake, orchestration Kestra, controles qualite SODA, notifications Slack, exports analytiques pour Tableau",
     "technologies": [
