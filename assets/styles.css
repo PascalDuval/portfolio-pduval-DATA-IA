@@ -24,6 +24,42 @@ body {
 
 .container { width: min(1120px, 92vw); margin: 0 auto; }
 
+.lang-switch {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid #0b5270;
+  color: #0b5270;
+  background: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .02em;
+  font-size: .84rem;
+}
+
+.lang-btn-active {
+  background: #e7f5fb;
+}
+
+.lang-btn-strong {
+  background: #ffedd5;
+  border-color: #c2410c;
+  color: #9a3412;
+}
+
+.lang-btn:hover {
+  transform: translateY(-1px);
+}
+
 header.hero { padding: 56px 0 26px; }
 .badge {
   display: inline-block;
@@ -217,4 +253,5 @@ footer {
 @media (max-width: 640px) {
   header.hero { padding-top: 34px; }
   .hero-photo { width: 96px; height: 96px; }
+  .lang-switch { justify-content: flex-start; }
 }

@@ -3,6 +3,21 @@ async function loadProjects() {
   return await res.json();
 }
 
+const lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+
+const uiText = {
+  fr: {
+    github: 'Github',
+    details: 'Voir la fiche projet et les compétences mise en oeuvre',
+    loadError: 'Erreur de chargement des projets.'
+  },
+  en: {
+    github: 'GitHub',
+    details: 'View project sheet and implemented skills',
+    loadError: 'Failed to load projects.'
+  }
+};
+
 function cardTemplate(project) {
   const tags = project.technologies.slice(0, 5).map(t => `<span class="tag">${t}</span>`).join('');
   const image = project.image
@@ -18,8 +33,8 @@ function cardTemplate(project) {
         <p>${project.summary}</p>
         <div class="tags">${tags}</div>
         <div class="actions">
-          <a class="btn btn-primary" href="${project.github}" target="_blank" rel="noreferrer">Github</a>
-          <a class="btn btn-secondary" href="./projects/${project.slug}.html">Voir la fiche projet et les compétences mise en oeuvre</a>
+          <a class="btn btn-primary" href="${project.github}" target="_blank" rel="noreferrer">${uiText[lang].github}</a>
+          <a class="btn btn-secondary" href="./projects/${project.slug}.html">${uiText[lang].details}</a>
         </div>
       </div>
     </article>
@@ -36,5 +51,5 @@ function renderProjects(projects) {
 
 loadProjects().then(renderProjects).catch(err => {
   console.error(err);
-  document.getElementById('featured-grid').innerHTML = '<p>Erreur de chargement des projets.</p>';
+  document.getElementById('featured-grid').innerHTML = `<p>${uiText[lang].loadError}</p>`;
 });
